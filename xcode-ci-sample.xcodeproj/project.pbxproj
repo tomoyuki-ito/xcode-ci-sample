@@ -12,7 +12,18 @@
 		DC7D1B2920BBA8F700412A9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7D1B2720BBA8F700412A9D /* Main.storyboard */; };
 		DC7D1B2B20BBA8F800412A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7D1B2A20BBA8F800412A9D /* Assets.xcassets */; };
 		DC7D1B2E20BBA8F800412A9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7D1B2C20BBA8F800412A9D /* LaunchScreen.storyboard */; };
+		DC7D1B3C20BBAE7400412A9D /* xcode_ci_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7D1B3B20BBAE7400412A9D /* xcode_ci_sampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7D1B3E20BBAE7400412A9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7D1B1820BBA8F600412A9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7D1B1F20BBA8F600412A9D;
+			remoteInfo = "xcode-ci-sample";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DC7D1B2020BBA8F700412A9D /* xcode-ci-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcode-ci-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		DC7D1B2A20BBA8F800412A9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC7D1B2D20BBA8F800412A9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC7D1B2F20BBA8F800412A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7D1B3920BBAE7400412A9D /* xcode-ci-sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "xcode-ci-sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7D1B3B20BBAE7400412A9D /* xcode_ci_sampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcode_ci_sampleTests.swift; sourceTree = "<group>"; };
+		DC7D1B3D20BBAE7400412A9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC7D1B1D20BBA8F600412A9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7D1B3620BBAE7400412A9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				DC7D1B2220BBA8F700412A9D /* xcode-ci-sample */,
+				DC7D1B3A20BBAE7400412A9D /* xcode-ci-sampleTests */,
 				DC7D1B2120BBA8F700412A9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				DC7D1B2020BBA8F700412A9D /* xcode-ci-sample.app */,
+				DC7D1B3920BBAE7400412A9D /* xcode-ci-sampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				DC7D1B2F20BBA8F800412A9D /* Info.plist */,
 			);
 			path = "xcode-ci-sample";
+			sourceTree = "<group>";
+		};
+		DC7D1B3A20BBAE7400412A9D /* xcode-ci-sampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7D1B3B20BBAE7400412A9D /* xcode_ci_sampleTests.swift */,
+				DC7D1B3D20BBAE7400412A9D /* Info.plist */,
+			);
+			path = "xcode-ci-sampleTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = DC7D1B2020BBA8F700412A9D /* xcode-ci-sample.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC7D1B3820BBAE7400412A9D /* xcode-ci-sampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7D1B4020BBAE7400412A9D /* Build configuration list for PBXNativeTarget "xcode-ci-sampleTests" */;
+			buildPhases = (
+				DC7D1B3520BBAE7400412A9D /* Sources */,
+				DC7D1B3620BBAE7400412A9D /* Frameworks */,
+				DC7D1B3720BBAE7400412A9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7D1B3F20BBAE7400412A9D /* PBXTargetDependency */,
+			);
+			name = "xcode-ci-sampleTests";
+			productName = "xcode-ci-sampleTests";
+			productReference = DC7D1B3920BBAE7400412A9D /* xcode-ci-sampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					DC7D1B1F20BBA8F600412A9D = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					DC7D1B3820BBAE7400412A9D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DC7D1B1F20BBA8F600412A9D;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				DC7D1B1F20BBA8F600412A9D /* xcode-ci-sample */,
+				DC7D1B3820BBAE7400412A9D /* xcode-ci-sampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC7D1B3720BBAE7400412A9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC7D1B3520BBAE7400412A9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7D1B3C20BBAE7400412A9D /* xcode_ci_sampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7D1B3F20BBAE7400412A9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7D1B1F20BBA8F600412A9D /* xcode-ci-sample */;
+			targetProxy = DC7D1B3E20BBAE7400412A9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC7D1B2720BBA8F700412A9D /* Main.storyboard */ = {
@@ -312,6 +390,46 @@
 			};
 			name = Release;
 		};
+		DC7D1B4120BBAE7400412A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5AYQR9JXN;
+				INFOPLIST_FILE = "xcode-ci-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pieces-inc.xcode-ci-sampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcode-ci-sample.app/xcode-ci-sample";
+			};
+			name = Debug;
+		};
+		DC7D1B4220BBAE7400412A9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W5AYQR9JXN;
+				INFOPLIST_FILE = "xcode-ci-sampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.pieces-inc.xcode-ci-sampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xcode-ci-sample.app/xcode-ci-sample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +447,15 @@
 			buildConfigurations = (
 				DC7D1B3320BBA8F800412A9D /* Debug */,
 				DC7D1B3420BBA8F800412A9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7D1B4020BBAE7400412A9D /* Build configuration list for PBXNativeTarget "xcode-ci-sampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7D1B4120BBAE7400412A9D /* Debug */,
+				DC7D1B4220BBAE7400412A9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
